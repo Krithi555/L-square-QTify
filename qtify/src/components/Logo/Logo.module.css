@@ -1,10 +1,10 @@
 .logo {
-    height: 48px;
-    width: auto;
-  }
-  
-  .logo:hover {
-    cursor: pointer;
-    opacity: 0.9;
-  }
-  
+  height: 48px;
+  width: auto;
+  margin-left: 24px; /* space from left */
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
