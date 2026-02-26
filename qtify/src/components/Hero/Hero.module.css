@@ -1,0 +1,30 @@
+.hero {
+    position: absolute;
+    top: 103px;
+    left: 327px;
+  
+    width: 799px;
+    height: 212px;
+  
+    background-color: #121212;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  .content h1 {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    margin: 0;
+  }
+  
+  .imageContainer img {
+    height: 160px;
+  }
