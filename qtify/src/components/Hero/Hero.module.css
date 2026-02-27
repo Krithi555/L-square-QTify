@@ -1,30 +1,39 @@
 .hero {
-    position: absolute;
-    top: 103px;
-    left: 327px;
-  
-    width: 799px;
-    height: 212px;
-  
-    background-color: #121212;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    padding: 0 40px;
-    box-sizing: border-box;
-  }
-  
-  .content h1 {
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 48px;
-    margin: 0;
-  }
-  
-  .imageContainer img {
-    height: 160px;
-  }
+  width: 100%;
+  background-color: #121212;
+
+  display: flex;
+  justify-content: center;   /* centers inner container */
+  align-items: center;
+
+  padding: 64px 32px;        /* top/bottom spacing */
+  box-sizing: border-box;
+}
+
+/* Inner fixed-width container */
+.inner {
+  width: 799px;              /* Figma width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Text section */
+.content h1 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 0;
+}
+
+/* Space between the two lines */
+.content h1 + h1 {
+  margin-top: 8px;
+}
+
+/* Image section */
+.imageContainer img {
+  height: 160px;
+}
