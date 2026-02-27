@@ -14,8 +14,10 @@ const Card = ({ image, follows, title }) => {
           size="small"
           className={styles.chip}
         />
-        <p className={styles.title}>{title}</p>
+        
       </div>
+
+      <p className={styles.title}>{title}</p>
     </div>
   );
 };
