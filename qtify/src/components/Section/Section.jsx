@@ -14,10 +14,9 @@ const Section = ({ title, api }) => {
         const response = await axios.get(api);
         setData(response.data);
       } catch (error) {
-        console.error("Error fetching albums:", error);
+        console.error("Error fetching data:", error);
       }
     };
-
     fetchData();
   }, [api]);
 
@@ -35,23 +34,25 @@ const Section = ({ title, api }) => {
 
       {showAll ? (
         <div className={styles.grid}>
-          {data.map((album) => (
+          {data.map((item) => (
             <Card
-              key={album.id}
-              image={album.image}
-              follows={album.follows}
-              title={album.title}
+              key={item.id}
+              image={item.image}
+              follows={item.follows}
+              title={item.title}
+              isSong={false}  // NEW prop
             />
           ))}
         </div>
       ) : (
         <Carousel
           data={data}
-          renderItem={(album) => (
+          renderItem={(item) => (
             <Card
-              image={album.image}
-              follows={album.follows}
-              title={album.title}
+              image={item.image}
+              follows={item.follows}
+              title={item.title}
+              isSong={false}  // NEW prop
             />
           )}
         />

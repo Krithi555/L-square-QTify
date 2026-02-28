@@ -1,0 +1,22 @@
+.songsSection {
+    padding: 40px 0;
+    border-top: 1px solid #34CA48;
+    border-bottom: 1px solid #34CA48;
+  }
+  
+  .tabs {
+    margin-bottom: 20px !important;
+  }
+  
+  .tab {
+    font-family: 'Poppins', sans-serif !important;
+    color: #34CA48 !important;
+    text-transform: capitalize !important;
+    font-weight: 500 !important;
+  }
+  
+  .tab.Mui-selected {
+    color: #000 !important;
+    font-weight: 700 !important;
+  }
+  
