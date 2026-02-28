@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
  
 
   width: 100%;
@@ -10,5 +11,6 @@
 
   padding: 0 32px;
   box-sizing: border-box;
+  border: 1px;
   
 }

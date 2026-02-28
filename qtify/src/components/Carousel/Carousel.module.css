@@ -1,0 +1,122 @@
+/* Carousel.module.css */
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  
+  /* Swiper container overrides */
+  .wrapper .swiper {
+    padding-bottom: 50px; /* Space for nav buttons */
+  }
+  
+  /* Slide styles */
+  .wrapper .swiper-slide {
+    height: auto;
+    display: flex;
+    align-items: stretch;
+  }
+  
+  /* Navigation button containers */
+  .left-nav,
+  .right-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .left-nav {
+    left: 10px;
+  }
+  
+  .right-nav {
+    right: 10px;
+  }
+  
+  /* Hover effects */
+  .left-nav:hover,
+  .right-nav:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Swiper disabled state */
+  .left-nav.swiper-button-disabled,
+  .right-nav.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .left-nav.swiper-button-disabled:hover,
+  .right-nav.swiper-button-disabled:hover {
+    transform: translateY(-50%);
+    scale: 1;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .wrapper {
+      padding: 0 10px;
+    }
+    
+    .left-nav,
+    .right-nav {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .left-nav {
+      left: 5px;
+    }
+    
+    .right-nav {
+      right: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wrapper .swiper {
+      padding-bottom: 40px;
+    }
+  }
+  
+  /* Ensure album cards fill slide height */
+  .wrapper .swiper-slide > * {
+    width: 100%;
+    height: 100%;
+    min-height: 300px; /* Adjust based on your album card height */
+  }
+  
+  /* Purple accent for active/selected (matches screenshot theme) */
+  .wrapper .swiper-slide-active {
+    /* Optional: subtle highlight */
+  }
+  
+  /* Custom scrollbar (optional, for modern look) */
+  .wrapper .swiper-scrollbar {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .wrapper .swiper-scrollbar-drag {
+    background: #8b5cf6; /* Purple theme color */
+  }
+  

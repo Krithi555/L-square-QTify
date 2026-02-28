@@ -2,7 +2,9 @@
   width: 67px;
   height: 34px;
   display: block;
-  
+  margin-left: 24px;  /* Space to left */
+  margin-top: 20px;   /* Centers vertically in 74px navbar */
+  margin-bottom: 20px;
 }
 
 .logo:hover {
